@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Starter pack for compiling ES6+ apps to ES5",
   "main": "app.js",
+  "homepage": "http://adityakansara1.github.io/micropost-api-easyhttp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
     "build": "webpack --mode production --progress",
     "json:server": "json-server --watch api/db.json"
   },
-  "author": "Brad Traversy",
+  "author": "Aditya Kansara",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.3",
